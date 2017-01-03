@@ -3,10 +3,8 @@ import * as path from 'path';
 import * as semver from 'semver';
 
 import { vscodePath as getAppPath } from '../utils';
-import { ISettings, IState, IVSCode } from '../models';
+import { ISettings, IState, IVSCode, ISettingsManager, ExtensionStatus } from '../models';
 import { extensionSettings } from './extensionSettings';
-import { ExtensionStatus } from './ExtensionStatus';
-import { ISettingsManager } from './ISettingsManager';
 export class SettingsManager implements ISettingsManager {
   private settings: ISettings;
 

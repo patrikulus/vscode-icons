@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as _ from 'lodash';
 
 import { schema as defaultSchema } from './defaultSchema';
-import { ISettingsManager, SettingsManager } from '../settings';
+import { SettingsManager } from '../settings';
 import { pathUnixJoin } from '../utils';
 import {
   IExtensionCollection,
@@ -15,6 +15,7 @@ import {
   IVSCode,
   IIconSchema,
   ISettings,
+  ISettingsManager,
 } from '../models';
 
 // tslint:disable-next-line no-var-requires
